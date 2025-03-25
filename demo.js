@@ -3,6 +3,8 @@ const { URL } = require('url');
 
 function calculateSum(ge_ua_p, nonce) {
     let sum = 0;
+    //let sum = 12345;
+    //FlexCDN此处改为12345
     for (let i = 0; i < ge_ua_p.length; i++) {
         let char = ge_ua_p[i];
         if (/^[a-zA-Z0-9]$/.test(char)) {
